@@ -1,4 +1,62 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #7d2ae8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    position: relative;
+    height: 120px;
+    width: 500px;
+    background: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul {
+    position: relative;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    position: relative;
+    height: 120px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.navbar ul li a i {
+    color: #7d2ae8;
+    font-size: 38px;
+    position:absolute;
+}
+
+.ativado {
+    opacity: 0;
+}
+
+.navbar ul li.ativado-lista a i {
+    opacity: 1;
+}
+
+.indicador {
+    
 }
