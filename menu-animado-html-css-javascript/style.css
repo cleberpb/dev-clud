@@ -52,6 +52,8 @@ body {
 
 .ativado {
     opacity: 0;
+    transition: all 0.6s ease;
+    transition-delay: 0.1s;
 }
 
 .navbar ul li.ativado-lista a i {
@@ -66,6 +68,7 @@ body {
     height: 36px;
     background: #7d2ae8;
     border-radius: 50%;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .indicador::before {
