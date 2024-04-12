@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div {
+    background: #878787;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+
+    /*FlexBox*/
+    display: flex; /*Ativa FlexBox*/
+    flex-direction: row;
+}
+
+section {
+    background: #9301bf;
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    border: 2px solid #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.bloco-1 {
+    order: 3;
+}
+
+.bloco-2 {
+   order: 1;
+}
+
+.bloco-3 {
+    order: 4;
+}
+
+.bloco-4 {
+    order: 2;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
