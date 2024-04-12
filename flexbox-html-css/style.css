@@ -5,44 +5,15 @@
 }
 
 div {
-    background: #878787;
-    width: 100%;
-    height: 100vh;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    gap: 10px;
+}
 
-    /*FlexBox*/
-    display: flex; /*Ativa FlexBox*/
+.nome, .endereco {
+    display: flex;
     flex-direction: row;
 }
-
-section {
-    background: #9301bf;
-    width: 200px;
-    height: 300px;
-    margin: 10px;
-    border: 2px solid #000000;
-    color: #ffffff;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.bloco-1 {
-    order: 3;
-}
-
-.bloco-2 {
-   order: 1;
-}
-
-.bloco-3 {
-    order: 4;
-}
-
-.bloco-4 {
-    order: 2;
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
