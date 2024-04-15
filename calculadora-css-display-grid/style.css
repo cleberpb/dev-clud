@@ -1,5 +1,50 @@
 * {
     margin: 0px;
     padding: 0px; 
-    box-sizing: border-box;  
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff; 
+ }
+
+ body {
+    background: #daf0ff;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+ }
+
+ div {
+    background: linear-gradient(191.34deg, #17181a -4.95%, #17181a 103.74%);
+    border-radius: 40px;
+    width: 375px;
+    height: 568px;
+
+    grid-template-columns: repeat(4, 1fr);
+    
+ }
+
+ p {
+   font-size: 48px;
+ }
+
+ button {
+   font-size: 24px;
+ }
+
+ .bt-azul {
+   background: #005db2;
+ }
+
+ .bt-azul-claro {
+   background: #1991ff;
+ }
+
+ .bt-cinza {
+   background: #616161;
+ }
+
+ .bt-preto {
+   background: #303136;
  }
