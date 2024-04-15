@@ -8,4 +8,36 @@
     background: #000000;
     height: 100vh;
     width: 100vw;
+    display: grid;
+
+
+    grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer"
+    ;
+ }
+
+ header {
+    background: #ff0000;
+    height: 100px;
+    grid-area: header;
+ }
+
+ main {
+    background: #0000ff;
+    height: 400px;
+    grid-area: main;
+ }
+
+ aside {
+    background: #858502;
+    height: 400px;
+    grid-area: aside;
+ }
+
+ footer {
+    background: #800080;
+    height: 100px;
+    grid-area: footer;
  }
