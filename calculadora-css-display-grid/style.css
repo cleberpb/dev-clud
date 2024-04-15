@@ -3,33 +3,3 @@
     padding: 0px; 
     box-sizing: border-box;  
  }
-
- div {
-    background: #000000;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    height: 100vh;
- }
-
- header {
-    background: #ff0000; 
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;   
- }
-
- main {
-    background: #0000ff;
-    grid-column: 2 / 3;
-    grid-row: 2 / 4;   
- }
-
- aside {
-    background: #858502;
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;   
- }
-
- footer {
-    background: #800080;    
- }
