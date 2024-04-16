@@ -15,32 +15,40 @@
 <body>
     <div>
 
-        <input>
+        <input class="display">
 
         <button class="bt-cinza">AC</button>
         <button class="bt-cinza">+/-</button>
-        <button class="bt-azul">/</button>
-        <button class="bt-azul">*</button>
+        <button class="bt-azul" onclick="adionarCaracter('/')">/</button>
+        <button class="bt-azul" onclick="adionarCaracter('0')">*</button>
 
-        <button class="bt-preto">7</button>
-        <button class="bt-preto">8</button>
-        <button class="bt-preto">9</button>
-        <button class="bt-azul">-</button>
+        <button class="bt-preto" onclick="adionarCaracter('7')">7</button>
+        <button class="bt-preto" onclick="adionarCaracter('8')">8</button>
+        <button class="bt-preto" onclick="adionarCaracter('9')">9</button>
+        <button class="bt-azul" onclick="adionarCaracter('-')">-</button>
 
-        <button class="bt-preto">4</button>
-        <button class="bt-preto">5</button>
-        <button class="bt-preto">6</button>
-        <button class="bt-azul">+</button>
+        <button class="bt-preto" onclick="adionarCaracter('4')">4</button>
+        <button class="bt-preto" onclick="adionarCaracter('5')">5</button>
+        <button class="bt-preto" onclick="adionarCaracter('6')">6</button>
+        <button class="bt-azul" onclick="adionarCaracter('+')">+</button>
 
-        <button class="bt-preto">1</button>
-        <button class="bt-preto">2</button>
-        <button class="bt-preto">3</button>
+        <button class="bt-preto" onclick="adionarCaracter('1')">1</button>
+        <button class="bt-preto" onclick="adionarCaracter('2')">2</button>
+        <button class="bt-preto" onclick="adionarCaracter('3')">3</button>
 
-        <button class="bt-azul-claro igual">=</button>
-        <button class="bt-preto zero">0</button>
-        <button class="bt-preto">.</button>
+        <button class="bt-azul-claro igual" onclick="adionarCaracter('=')">=</button>
+        <button class="bt-preto zero" onclick="adionarCaracter('0')">0</button>
+        <button class="bt-preto" onclick="adionarCaracter('.')">.</button>
 
     </div>
 </body>
+
+<script>
+    function adionarCaracter(caracter){
+        const valorDisplay = document.querySelector(".display").value
+        
+        document.querySelector(".display").value = valorDisplay + caracter
+    }
+</script>
 
 </html>
