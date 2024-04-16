@@ -17,10 +17,10 @@
 
         <input class="display">
 
-        <button class="bt-cinza">AC</button>
-        <button class="bt-cinza">+/-</button>
+        <button class="bt-cinza" onclick="limpaTela()">AC</button>
+        <button class="bt-cinza" onclick="inverterNumero()">+/-</button>
         <button class="bt-azul" onclick="adionarCaracter('/')">/</button>
-        <button class="bt-azul" onclick="adionarCaracter('0')">*</button>
+        <button class="bt-azul" onclick="adionarCaracter('*')">*</button>
 
         <button class="bt-preto" onclick="adionarCaracter('7')">7</button>
         <button class="bt-preto" onclick="adionarCaracter('8')">8</button>
@@ -36,7 +36,7 @@
         <button class="bt-preto" onclick="adionarCaracter('2')">2</button>
         <button class="bt-preto" onclick="adionarCaracter('3')">3</button>
 
-        <button class="bt-azul-claro igual" onclick="adionarCaracter('=')">=</button>
+        <button class="bt-azul-claro igual" onclick="calcular()">=</button>
         <button class="bt-preto zero" onclick="adionarCaracter('0')">0</button>
         <button class="bt-preto" onclick="adionarCaracter('.')">.</button>
 
@@ -44,11 +44,30 @@
 </body>
 
 <script>
+    //Pega evento dos botões
     function adionarCaracter(caracter){
         const valorDisplay = document.querySelector(".display").value
         
         document.querySelector(".display").value = valorDisplay + caracter
     }
+
+    //Limpa os caracteres
+    function limpaTela(){
+        document.querySelector(".display").value = ""
+    }
+
+    //Calcular
+    function calcular(){
+        const valorDisplay = document.querySelector(".display").value
+        document.querySelector(".display").value = eval(valorDisplay)
+    }
+
+    //Inverter número
+    function inverterNumero(){
+        const valorDisplay = document.querySelector(".display").value
+        document.querySelector(".display").value = valorDisplay * -1
+    }
+
 </script>
 
 </html>
