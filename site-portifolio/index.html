@@ -13,24 +13,24 @@
 <body>
     <!--Cabeçalho-->
     <div class="principal">
-        <nav>
+        <nav class="fixed-nav">
             <h2 class="portfolio">Portfó<span>lio</span></h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Fale comigo</a></li>
+                <li><a href="#navbar">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Fale comigo</a></li>
                 </a>
             </ul>
         </nav>
 
         <!--Sobre mim-->
-        <div class="meu-nome">
+        <div class="meu-nome" id="navbar">
             <h1>Cleber <span>Pereira</span></h1>
             <h3>Programado Front End</h3>
         </div>
     </div>
-    <section>
+    <section id="sobre">
         <img src="imagens/cleber-portifolio02.png" alt="Imagem do programador Cleber">
 
         <div>
@@ -41,7 +41,7 @@
     </section>
 
     <!--Cards-->
-    <div class="projetos">
+    <div class="projetos" id="projetos">
         <h2>Pricipais projetos</h2>
         <div class="cards-grupo">
             <div class="card">
@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer id="contato">
         <h5>Cleber Pereira</h5>
         <p>Para mais informações</p>
 
