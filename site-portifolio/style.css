@@ -34,15 +34,19 @@ nav {
 }
 
 li {
-    color: #ffffff;
-    list-style: none;
     display: inline-block;
     font-size: 16px;
     margin-right: 30px;
     cursor: pointer;
 }
 
-li:hover {
+li a {
+    color: #ffffff;
+    list-style: none;
+    text-decoration: none;
+}
+
+li a:hover {
     color: #f9004d;
     transition: 0.5s;
 }
