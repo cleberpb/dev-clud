@@ -18,14 +18,14 @@ body {
 .container {
     width: 420px;
     background: transparent;
-    border: 2px solid #9b9b9b;
+    border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(5px);
     border-radius: 10px;
     padding: 30px 40px;
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 30px;
     text-align: center;
     color: #ffffff;
 }
@@ -89,4 +89,24 @@ h1 {
 
 .btn-entrar:hover {
     background: #6115be;
+}
+
+.cadastro {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.cadastro p, a {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.cadastro p {
+    font-weight: 300;
+}
+
+.cadastro a:hover {
+    text-decoration: underline;
 }
